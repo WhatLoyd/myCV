@@ -1,0 +1,389 @@
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*--------------------*/
+:root {
+    --whatsapp: #25d366;
+    --instagram: #c32aa3;
+    --telegram: #0088cc;
+    --viber: #7360f2;
+    --phone: #df9e3e;;
+    --email: #EA4335;;
+    --vk: #4a76a8;
+    --body-text: #566073;
+    --headings: #183153;
+    --theme-color: #FFC369;
+    --dark: #1E283A;
+    --link: #1B6CFF;
+}
+body {
+    color: var(--body-text);
+    font-family: 'Raleway', sans-serif;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: var(--headings);
+    font-family: 'Forum', cursive;
+}
+.wrapper,
+.main {
+    max-width: 1190px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 100px 0;
+}
+
+.my-name {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+.my-naming {
+    margin-bottom: 40px;
+}
+.my-proffesion {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.my-phone,
+.my-socials,
+.my-email,
+.phone-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+.phone-link {
+    margin-right: 10px;
+}
+.my-socials {
+    margin: 20px 0;
+}
+.header {
+    display: flex;
+    align-items: flex-end;
+    margin-left: -65px;
+}
+.header__right-block {
+    margin-left: 70px;
+}
+.connect p {
+    color: var(--dark);
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+}
+.block {
+    display: flex;
+    gap: 0 60px;
+    width: 100%;
+}
+.block-heading {
+    height: 35px;
+    font-size: 34px;
+    line-height: 36px;
+    letter-spacing: -1px;
+}
+.block-heading:after {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 10px;
+    margin-top: 20px;
+    background: #FFC369;
+    border-radius: 1px;
+}
+.left-block__heading {
+    width: 225px;
+}
+.right-block__text {
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    margin-top: 4px;
+    max-width: 905px;
+}
+.p-head {
+    color: var(--dark);
+    font-weight: 600;
+}
+.a-link {
+    color: var(--link);
+    font-weight: 600;
+}
+.gradient {
+    background: linear-gradient(89.9deg, #1B6CFF 0.06%, #1E283A 59.42%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.a-link::before {
+    content: url(/icons/lico16.svg);
+    position: relative;
+    top: 2px;
+    right: 10px;
+}
+
+.right-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.kits_icons {
+    display: flex;
+    gap: 49px;
+}
+.kit-icon {
+    width: 110px;
+    height: 110px;
+    margin: 10px 0;
+}
+
+.kits-icon {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.percent {
+    font-size: 14px;
+    line-height: 35px;
+    color: #919191;
+    height: 20px;
+}
+
+.kit-name {
+    font-size: 14px;
+    line-height: 35px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.figma-icon {
+    background: url(/icons/firma-icon.svg);
+}
+.photoshop-icon {
+    background: url(/icons/photoshop-icon.svg);
+}
+.html-icon {
+    background: url(/icons/html-icon.svg);
+}
+.css-icon {
+    background: url(/icons/css-icon.svg);
+}
+.tilda-icon {
+    background: url(/icons/tilda-icon.svg);
+}
+.wordpress-icon {
+    background: url(/icons/wordpress-icon.svg);
+}
+
+.work-examples {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.work-examples > .block-heading {
+    margin-bottom: 90px;
+}
+.work-examples > .block-heading:after {
+    width: 210px;
+}
+.examples-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 25px;
+}
+.thanks {
+    font-size: 68px;
+    line-height: 50px;
+    font-family: 'Forum';
+    letter-spacing: -2.5px;
+    text-align: center;
+    z-index: 100;
+    margin-bottom: 60px;
+}
+.thank-you {
+    position: relative;
+}
+.thank-you img {
+    position: absolute;
+    width: 250px;
+    height: 283px;
+    right: -28px;
+    top: -38px;
+    z-index: 20;
+}
+
+.contact-me {
+    margin: 0 auto;
+    max-width: 560px;
+    display: flex;
+    margin-bottom: 100px;
+}
+.call-me {
+    margin-right: 100px;
+}
+.call-me p,
+.write-me p {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--link);
+}
+.write-me a {
+    margin-bottom: 30px;
+}
+
+.contact-me__heading {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 33px;
+    margin-bottom: 30px;
+}
+
+.call-me,
+.write-me {
+    width: 230px;
+}
+
+.link-label-makler {
+    height: 60px;
+    background: #E6E6E6;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.link-label-makler a {
+    font-size: 18px;
+    color: var(--body-text);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ svg.icon {
+    width: 28px;
+    height: 28px;
+    fill: #6B778B;
+    transition: 0.25s;
+}
+.icon-vk svg.icon:hover         {fill: var(--vk);}
+.icon-instagram svg.icon:hover  {fill: var(--instagram);}
+.icon-telegram svg.icon:hover   {fill: var(--telegram);}
+.icon-whatsapp svg.icon:hover   {fill: var(--whatsapp);}
+.icon-viber svg.icon:hover      {fill: var(--viber);}
+.icon-email svg.icon:hover      {fill: var(--email);}
+.icon-phone svg.icon:hover      {fill: var(--phone);}
+.icon-link svg.icon:hover       {fill: var(--link);}
+.icons {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s;
+}
+.icons:hover {
+    background: #eeeeee;
+    border: none;
+    border-radius: 6px;
+}
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.divider {
+    font-size: 18px;
+    font-family: 'Forum', cursive;
+    margin: 0 12px;
+    color: #DDDDDD;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
